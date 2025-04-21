@@ -1,18 +1,13 @@
-import './App.css';
-import React, { useState, useEffect, useContext  } from 'react';
-import { Routes, Route, useNavigate,  } from "react-router-dom";
-import Layout from "../../Components/Layout/Layout"
+import React  from 'react';
 import Home from '../Home/Home';
+import Header from '../../Components/Header/Header';
 
 const App = () => {
-
-
   return (
-    <Routes>
-      <Route path="/" element={<Layout/>}>
-        <Route index element={<Home />} />
-      </Route>
-    </Routes>
+    <div>
+      <Header/>
+      <Home/>
+    </div>
   );
 };
 
