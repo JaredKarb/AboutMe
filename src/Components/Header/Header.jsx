@@ -3,7 +3,7 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="sticky-top header-bg bg-dark">
+    <Navbar expand="lg" className="sticky-top header-bg bg-secondary opacity-75">
       <Container fluid className="mx-2">
         <Navbar.Brand href="/" className="text-light fs-3">About Jared Karbakhsh</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
