@@ -8,10 +8,10 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto justify-content-end">
-            <Nav.Link href="#hero" className="text-light">Home</Nav.Link>
+            <Nav.Link href="" className="text-light">Home</Nav.Link>
             <Nav.Link href="#about" className="text-light">About</Nav.Link>
-            <Nav.Link href="#projects" className="text-light">Projects</Nav.Link>
-            <Nav.Link href="#contact" className="text-light">Contact</Nav.Link>
+            <Nav.Link href="#workhistory" className="text-light">Work History</Nav.Link>
+            <Nav.Link href="#Education" className="text-light">Education</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
