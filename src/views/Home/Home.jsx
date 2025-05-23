@@ -1,5 +1,5 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import SectionGroup from "../../Components/SectionGroup/SectionGroup";
 
 const sections = [
   { id: "Summary", title: "Welcome to My Portfolio", content: `Welcome to my portfolio! I'm Jared Karbakhsh, a Full-Stack Developer with a passion for building powerful, scalable software solutions. With experience in both front-end and back-end technologies, I enjoy solving complex problems and delivering clean, efficient code. I'm always looking to expand my skill set and take on new challenges in software development.` },
@@ -15,21 +15,12 @@ const Home = () => {
   const bottomSections = sections.slice(3);
 
   return (
-    <Container fluid>
+    <Container fluid className="bg-dark">
       <Row>
-        <Col md={8}>
-          {topSections.map((section) => (
-            <section
-              id={section.id}
-              className={`${section.id}-section border border-1 bg-secondary p-3 mb-3`}
-              key={section.id}
-            >
-              <h2>{section.title}</h2>
-              <p>{section.content}</p>
-            </section>
-          ))}
+        <Col md={8} className="mt-4">
+          <SectionGroup sections={topSections} bgClass="bg-secondary" />
         </Col>
-        <Col md={4}>
+        <Col md={4} className="mt-4">
           <img
             src="/hero.webp"
             alt="Profile"
@@ -39,16 +30,7 @@ const Home = () => {
       </Row>
       <Row className="mt-4">
         <Col>
-          {bottomSections.map((section) => (
-            <section
-              id={section.id}
-              className={`${section.id}-section border border-1 bg-danger p-3 mb-3`}
-              key={section.id}
-            >
-              <h2>{section.title}</h2>
-              <p>{section.content}</p>
-            </section>
-          ))}
+          <SectionGroup sections={bottomSections} bgClass="bg-danger" />
         </Col>
       </Row>
     </Container>
